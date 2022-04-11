@@ -1,0 +1,170 @@
+TASK
+
+>Date : 01-03-2022
+CICD TASK ON MEDIUM
+https://medium.com/@ncodeit.mobbi/110f6ce55d36
+
+>Date : 03-03-2022
+Please proceed with the BlueOcean Jenkins Pipeline  & others
+https://medium.com/ztrix-internal/jenkins-by-example-eb4b9f9b1343
+
+>Date : 09-03-2022
+Once that is done,
+Please proceed with a AWS Provider task - terraform aws provider - https://learn.hashicorp.com/tutorials/terraform/aws-build
+
+
+>Date : 10-03-2022
+- GitHub - 100daysofdevops/21_days_of_aws_using_terraform	https://github.com/100daysofdevops/21_days_of_aws_using_terraform
+	setup a gcp/aws/azure vm - Ubuntu18.04. Install terraform 
+	clone the repo to the vm where terraform is installed.
+	cd to each directory and execute terraform init,plan,apply,destroy  ( provide necessary inputs where ever required )
+	Record each execution separately and provide submit as deliverables.
+
+>Date : 11-03-2022
+- GITLAB AUTODEVOPS run - 
+    - login to your gitlab account. 
+	- go to https://gitlab.com/jopgrp1      ( if you do not see any projects in here, check with the trainer) 
+	- click on the repo "a6i-Ruby on Rails" 
+	- click "Fork" 
+	- give project name "original-project-name"-<yourname> 
+	- select a namespace (any) 
+	- visibility "private" 
+	- click "fork project" 
+	- click "Enable Audo DevOps" 
+	- select "Default to Auto DevOps pipeline" 
+	- select "Automatic deployment to staging, manual deployment to production" 
+	- "save changes" 
+	- go back to project code again . ( click on name of the project at top) 
+	- click "WebIDE" 
+	- slect "README.md" 
+	- enter "# CICD test" at the bottom 
+	- click "commit" 
+	- select "create a new branch" - leave the default branch name 
+	- select "start a new merge request" 
+	- click " commit" 
+	- click "create mmerge request" 
+	- click "Approve" 
+	- click on "pipelines" at the top 
+	- if this is the first time it will ask you to "Validate account". validate using a credit card. Its only for validation. No changes will be levied. 
+	- after the validation is done, click on "CICD Pipelines"
+	- Identify the pipeline that you just started and check under stages
+	- for each stage you will see an clock-like symbol to indicate what percentage is completed. click on first and check the log file. Make sure its successful. 
+	- take a screenshot of the last 10 lines of the logfile including `SUCCESSFUL` or `FAILED` 
+	- post the screenshot to the slack channel
+
+- Repeat the above process , to run the DevOps CICD pipeline for all the projects in the below list
+"Project 1"  "a6i-Ruby-Rails"  "URL :https://gitlab.com/jopgrp1/a6i-ruby-on-rails/-/pipelines" - result : https://gyazo.com/9a6db94146fb079302f7aac10d1e69df
+"project 2"  "c6a-nodejs-express"   "URL https://gitlab.com/jopgrp1/c6a-nodejs-express.git"
+"project 3"  " d94-ios-swift"  "URL:  https://gitlab.com/jopgrp1/d94-ios-swift.git"
+"project 4"  "e0u-.net-core"  "URL  :  https://gitlab.com/jopgrp1/e0u-.net-core.git"
+"project 5"  "fhd-android"  " URL :  https://gitlab.com/jopgrp1/fhd-android.git"
+"project 6"  "gft-go-micro"  "URL : https://gitlab.com/jopgrp1/gft-go-micro.git"
+"Project 7"  "itw-pages-gatsby"  "URL : https://gitlab.com/jopgrp1/itw-pages-gatsby.git"
+"project 8"  "jeg-pages-hugo"   "URL : https://gitlab.com/jopgrp1/jeg-pages-hugo.git"
+"Project 9"  "jup-pages-jekyll"  "URL : https://gitlab.com/jopgrp1/jup-pages-jekyll.git"
+"project 10"  "lg5-pages-plain-html"  "URL : https://gitlab.com/jopgrp1/lg5-pages-plain-html.git"
+"project 11"  "m7b-pages-gitbook"  "URL : https://gitlab.com/jopgrp1/m7b-pages-gitbook.git"
+"project 12"  "mgq-pages-hexo"   " URL : https://gitlab.com/jopgrp1/mgq-pages-hexo.git"
+"project 13"  "noe-static-site-editor-middleman"  "URL : https://gitlab.com/jopgrp1/noe-static-site-editor-middleman.git"
+"project 14"  "ns1-gitpod-spring-petclinic"  "URL :  https://gitlab.com/jopgrp1/ns1-gitpod-spring-petclinic.git"
+"project 15"  "ogn-netlify-hugo"  "URL :  https://gitlab.com/jopgrp1/ogn-netlify-hugo.git"
+"project 16 "  "qi4-salesforcedx"  "URL : https://gitlab.com/jopgrp1/qi4-salesforcedx.git"
+"project 17"  "tgn-serverless-framework-js"  "URL : https://gitlab.com/jopgrp1/tgn-serverless-framework-js.git"
+"project 18"  "tn8 - Jsonnet for Dynamic Child Pipelines"  "URL :  https://gitlab.com/jopgrp1/tn8-Jsonnet-for-Dynamic-Child-Pipelines.git"
+"project 19"  "ub8-gitlab-cluster-management"  "URL :  https://gitlab.com/jopgrp1/ub8-gitlab-cluster-management.git"
+"project 20 "  "wot-kotlin-native-linux"  "URL : https://gitlab.com/jopgrp1/wot-kotlin-native-linux.git"
+"project 21"  "zsw - HIPAA Audit Protocol"  "URL :  https://gitlab.com/jopgrp1/zsw-hipaa-audit-protocol.git"
+
+
+>Date : 18-03-2022
+https://gitlab.com/jopgrp1/subgrp-pr01/realtime-project1/-/blob/main/docs/mini-project.md
+Mini project
+setup the following mini environment in your GCP and Azure Account .
+
+	-setup a VM on your GCP and install Jenkins server (VM1) - GCP
+		.post the Jenkins interface screenshot to slack
+		.Nexus server (integrate jenkins with nexus if works) - Azure
+			-post the nexus interface screenshot to slack
+			-setup the freestyle job and integrate it with slack
+			-then stop the Nexus server.
+		.Install Ansible on the Jenkins server itself
+			-post the output "ansible --version" to slack
+		.Install and setup http server VM1, on port 7777
+			-post the default page of the apache on 7777 port to slack
+		.setup a jenkins job
+			-that runs every 10 minutes
+				-post the cron entry to slack
+			-and run an ansible-playbook which restarts a http server running on the Jenkins server
+				-post the screenshot of Jenkins console output of job to slack
+		.setup a jenkins job that can be run manually
+			-that runs terraform playbook to launch an ec2 instance
+			-run the job manually and post the screenshot of log to slack
+		.use zabbix to monitor jenkins server/ec2 instance
+			-post the screenshots of the jenkins server & ec2 instance
+
+>Date : 23-03-2022
+login through ncodeit2.atlassian.net
+id : ncd.jobseeker@gmail.com
+pwd:  nAiSSalTa@21ncdjopattl8926
+
+>Date : 06-04-2022
+Team, here is a challenge to get your used to minor conversions of docs vs tasks
+In the document below , you have
+* building a docker image for jenkins
+* deploying that jenkins docker image as a pod ( service) to any k8s cluster
+https://medium.com/the-programmer/ci-cd-pipeline-with-jenkins-github-part-1-c057a31b5297
+
+
+>Date : 07-04-2022
+Register only for one course , through this link - https://uklabs.kodekloud.com/courses/labs-certified-kubernetes-administrator-with-practice-tests/
+use coupon code : udemystudent151113
+
+>Date : 08-04-2022
+Hello Team, Now that we know the basics of k8s, lets move ahead into some practical tools that are used in realtime projects.
+These tools are more important than indepth knowledge of k8s.
+The most common activity any k8s DevOps engineer does is to deploy applications.
+Once such application is deployed, it needs to be upgraded/downgraded etc across various versions.
+The most popular tool used to do this is Helm.
+Helm is a package manager for k8s. Lets try to get a quick overview of what Helm is and how it works.
+Once these sessions are done, we will move ahead with some hands-on
+    What is Helm - https://vimeo.com/697311624
+    Installation and configuration - https://vimeo.com/697311530
+    A quick note about Helm2 vs Helm3 - https://vimeo.com/697311757
+    Helm Components - https://vimeo.com/697311482
+    Helm charts - https://vimeo.com/697311404
+    Working with Helm- basics - https://vimeo.com/697311694
+    Customizing chart parameters - https://vimeo.com/697311819
+    Lifecycle management with Helm - https://vimeo.com/697311565
+
+
+>Date : 09-04-2022
+Those who finished the Quizzes on k8s, lets move on to a real-time project activity that involves multiple technologies. This task is the closest to the realtime tasks that you will be doing. While its not necessary to be able to create a process from scratch ( that will be done by architect) , but you should be able to understand the whole process - so that you can explain it really well in the interview - and be able to  execute some of the tasks.
+Lets go ahead and try it - https://jeromedecoster.github.io/aws/kubernetes-eks-blue/green-deployment/
+
+
+>Date : 09-04-2022
+ https://github.com/kubernetes/kops
+ https://blog.mayadata.io/openebs/provisioning-google-cloud-with-k8s-using-it-in-house-tool-kops
+ https://www.youtube.com/watch?v=W4dJXPYPbb0
+
+Team, the k8s version the document uses is 1.11.1
+Instead set up the cluster with 1.19
+--kubernetes-version=1.11.1
+
+>Date : 09-04-2022
+Team, After you are done with the KOPS cluster creation - go ahead and install the scripts from below location -
+https://github.com/ncodeit-io/devops-cloud/tree/main/kubernetes/scripts
+3:59
+there are 3 scripts
+01-krew-insgta.sh
+02-kubectx-kubens-install.sh
+03-k9s-install.sh
+
+These 3 scripts are for installing 4 very important k8s realtime components.
+We will have a quick discussion once you have them ready .
+
+>Date : 09-04-2022
+Team, If you are done with GCP based kops Or having issues with the GCP based kops you can move to aws based kops
+Follow the document - https://medium.com/avmconsulting-blog/setup-k8-cluster-using-ec2-instance-using-kops-with-a-gossip-based-cluster-without-using-route53-a5446e181336
+Quick video - (not related to documents) - https://www.youtube.com/watch?v=qJXi_WQTFk4
+
