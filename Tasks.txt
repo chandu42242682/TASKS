@@ -168,3 +168,11 @@ Team, If you are done with GCP based kops Or having issues with the GCP based ko
 Follow the document - https://medium.com/avmconsulting-blog/setup-k8-cluster-using-ec2-instance-using-kops-with-a-gossip-based-cluster-without-using-route53-a5446e181336
 Quick video - (not related to documents) - https://www.youtube.com/watch?v=qJXi_WQTFk4
 
+>Date : 16-03-2022
+Project Name :
+Global Infrastructure Support ( GIS)
+APAC Infra support (AIS)
+EMEA Infra support ( EIS)
+General Operations Support ( GOS)
+Incase anyone is asked about the Project Name :
+Pick any one of them.
